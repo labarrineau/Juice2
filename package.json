@@ -1,13 +1,14 @@
 {
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "pg": "^8.7.1"
   },
   "name": "juice2",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "seed:dev": "nodemon ./db/seed.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,8 @@
     "url": "https://github.com/labarrineau/Juice2/issues"
   },
   "homepage": "https://github.com/labarrineau/Juice2#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
 }
